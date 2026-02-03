@@ -298,3 +298,22 @@ uplink-cddisksyndicate-name = Диск с рекламой Синдиката
 uplink-cddisksyndicate-desc = 102.9 радио-Синдиката
 uplink-cddisknumber-name = Диск "Номер Станции"
 uplink-cddisknumber-desc = Сообщите об угрозе, чтобы отвлечь внимание станции... удачи во всем этом.
+uplink-box-xenobio-name = Ксенобиологическая коробка
+uplink-box-xenobio-desc = Слаймы для ксенобиологических нужд. Содержит 9 случайных T1 слаймов.
+
+# Contractor
+
+uplink-moduist-contractor-name = МОД контрактника
+uplink-moduist-contractor-desc = Этот легкий МОД был создан специально для Гильдии! В его изготовлении использован пластитан, обеспечивающий исключительную прочность, но при этом легкий вес. Он оснащен сервоприводами, которые помогут вам крепче захватывать цели, инжекторами, обнаруживающими критические повреждения, и встроенной технологией хамелеона! Чтобы сохранить свой сверхлегкий вес, этот спортивный костюм не имеет возможностей для хранения.
+
+uplink-hardsuit-contractor-name = Набор скафандра контрактника
+uplink-hardsuit-contractor-desc = Этот легкий скафандр был создан специально для Гильдии! Его можно легко сложить в рюкзак.
+
+uplink-webbing-contractor-name = Разгрузка контрактника
+uplink-webbing-contractor-desc = A chest rig with deep pockets and explosion resistance, often used by contractors and bounty hunters.
+
+uplink-jetpack-contractor-name = Джетпак контрактника
+uplink-jetpack-contractor-desc = Этот реактивный ранец был создан специально для Гильдии! Обладает высокой маневренностью и приличным запасом топлива, что идеально подходит для быстрого бегства. Имеет встроенные ремни для хранения костюма.
+
+uplink-cuffs-contractor-name = Наручники
+uplink-cuffs-contractor-desc = Используется для задержания преступников и прочих придурков.
