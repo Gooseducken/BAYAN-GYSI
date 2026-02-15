@@ -100,22 +100,41 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
-  id: BoozeDispenser
+  id: BoozeDispenserEmpty
   name: booze dispenser
-#  suffix: Filled # Orion-Edit: Removed
+  suffix: Empty
   description: A booze dispenser with a single slot for a container to be filled.
   parent: ReagentDispenserBase
+  categories: [ HideSpawnMenu ] # Orion-Edit: Migration
   components:
   - type: Rotatable
   - type: Sprite
     sprite: Structures/smalldispensers.rsi
     drawdepth: SmallObjects
     state: booze
-#  - type: Storage # Orion-Edit: Removed
-#    openOnActivate: false
-#    whitelist:
-#      tags:
-#      - DrinkBottle
+  - type: Storage
+    openOnActivate: false
+    whitelist:
+      tags:
+      - DrinkBottle
+  - type: Transform
+    noRot: false
+  - type: Machine
+    board: BoozeDispenserMachineCircuitboard
+  - type: GuideHelp
+    guides:
+    - Bartender
+    - Drinks
+  - type: StealTarget
+    stealGroup: BoozeDispenser
+
+- type: entity
+  id: BoozeDispenserEmpty
+  name: booze dispenser
+#  suffix: Filled # Orion-Edit: Removed
+  description: A booze dispenser with a single slot for a container to be filled.
+  parent: [ ReagentDispenserBase, BoozeDispenserEmpty ] # Orion-Edit
+  components:
   # Orion-Start
   - type: EnergyReagentDispenser
     energyBeakerSlot:
@@ -168,24 +187,3 @@
   - type: ApcPowerReceiver
     powerLoad: 30
   # Orion-End
-  - type: Transform
-    noRot: false
-  - type: Machine
-    board: BoozeDispenserMachineCircuitboard
-  - type: GuideHelp
-    guides:
-    - Bartender
-    - Drinks
-  - type: StealTarget
-    stealGroup: BoozeDispenser
-
-- type: entity
-  id: BoozeDispenserEmpty
-  suffix: Empty
-  parent: BoozeDispenser
-  categories: [ HideSpawnMenu ] # Orion-Edit: Migration
-  components:
-  - type: Storage
-    whitelist:
-      tags:
-      - DrinkBottle
