@@ -41,8 +41,8 @@
     <GuideEntityEmbed Entity="GuidebookHarm" Caption=""/>
   </Box>
 
-  Disarms the opponent, pushes them away, as well as knocking them down causing them to be more vulnerable to unarmed melee attacks while they're down.
-  Only works on standing opponents.
+  Обезоруживает противника, отталкивает его, а также сбивает с ног, делая его более уязвимым для рукопашных атак без оружия, когда он лежит на земле.
+  Работает только на стоящих противниках.
 
   ### Круговой удар ногой
 
