@@ -1,0 +1,18 @@
+# gooseduck
+- type: customGhost
+  parent: CkeyPersonal
+  id: gooseduck-ghost
+  restrictions:
+  - !type:CkeyRestriction
+    ckey: [ PuroSlavKing ]
+  entity: MobObserver-gooseduck
+
+- type: entity
+  parent: MobObserver
+  id: MobObserver-gooseduck
+  description: нет.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _Bayan/Ghosts/gooseduck-ghost.rsi
+    color: "#ffffffe6" # 0.9 alpha
