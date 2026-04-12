@@ -1,0 +1,305 @@
+- type: Tag
+  id: MusicTape
+
+- type: entity
+  parent: BaseItem
+  id: BaseMusicTape
+  name: кассета
+  abstract: true
+  description:
+  components:
+  - type: Item
+    size: Tiny
+  - type: Sprite
+    sprite: _Bayan/Objects/Devices/tapes.rsi
+  - type: Tag
+    tags:
+    - MusicTape
+
+- type: entity
+  parent: BaseMusicTape
+  id: MusicTape1
+  name: Кассета (Пират - Магнитофон)
+  description:
+  components:
+  - type: Sprite
+    state: tape2
+  - type: MusicTape
+    sound: "/Audio/_Bayan/TapePlayer/Tracks/magnitofon.ogg"
+
+- type: entity
+  parent: BaseMusicTape
+  id: MusicTape2
+  name: Кассета (Ken Ashcorp - Absolute territory)
+  description:
+  components:
+  - type: Sprite
+    state: tape1
+  - type: MusicTape
+    sound: "/Audio/_Bayan/TapePlayer/Tracks/absoluteterr.ogg"
+
+- type: entity
+  parent: BaseMusicTape
+  id: MusicTape3
+  name: Кассета (КИНО - Мама мы все тяжело больны)
+  description:
+  components:
+  - type: Sprite
+    state: tape7
+  - type: MusicTape
+    sound: "/Audio/_Bayan/TapePlayer/Tracks/bolni.ogg"
+
+- type: entity
+  parent: BaseMusicTape
+  id: MusicTape4
+  name: Кассета (??? - CaramellDancen)
+  description:
+  components:
+  - type: Sprite
+    state: tape23
+  - type: MusicTape
+    sound: "/Audio/_Bayan/TapePlayer/Tracks/caramel.ogg"
+
+- type: entity
+  parent: BaseMusicTape
+  id: MusicTape5
+  name: Кассета (Марк Бернес - Тёмная ночь)
+  description:
+  components:
+  - type: Sprite
+    state: tape1
+  - type: MusicTape
+    sound: "/Audio/_Bayan/TapePlayer/Tracks/darkisthenight.ogg"
+
+- type: entity
+  parent: BaseMusicTape
+  id: MusicTape6
+  name: Кассета (Гражданская оборона - Далеко бежит дорога)
+  description:
+  components:
+  - type: Sprite
+    state: tape35
+  - type: MusicTape
+    sound: "/Audio/_Bayan/TapePlayer/Tracks/doroga.ogg"
+
+- type: entity
+  parent: BaseMusicTape
+  id: MusicTape7
+  name: Кассета (??? - everlong)
+  description:
+  components:
+  - type: Sprite
+    state: tape16
+  - type: MusicTape
+    sound: "/Audio/_Bayan/TapePlayer/Tracks/everlong.ogg"
+
+- type: entity
+  parent: BaseMusicTape
+  id: MusicTape8
+  name: Кассета (Чернозём и звёзды - Гипербореи)
+  description:
+  components:
+  - type: Sprite
+    state: tape22
+  - type: MusicTape
+    sound: "/Audio/_Bayan/TapePlayer/Tracks/giperborei.ogg"
+
+- type: entity
+  parent: BaseMusicTape
+  id: MusicTape9
+  name: Кассета (The Childish Gambino - Heartbeat)
+  description:
+  components:
+  - type: Sprite
+    state: tape12
+  - type: MusicTape
+    sound: "/Audio/_Bayan/TapePlayer/Tracks/heartbit.ogg"
+
+- type: entity
+  parent: BaseMusicTape
+  id: MusicTape10
+  name: Кассета (Joji - Tick Tock)
+  description:
+  components:
+  - type: Sprite
+    state: tape29
+  - type: MusicTape
+    sound: "/Audio/_Bayan/TapePlayer/Tracks/Joji_Tick_Tock.ogg"
+
+- type: entity
+  parent: BaseMusicTape
+  id: MusicTape11
+  name: Кассета (КИНО - Место для шага вперёд)
+  description:
+  components:
+  - type: Sprite
+    state: tape7
+  - type: MusicTape
+    sound: "/Audio/_Bayan/TapePlayer/Tracks/MDSHW.ogg"
+
+- type: entity
+  parent: BaseMusicTape
+  id: MusicTape12
+  name: Кассета (Шумные и угрожающие выходки - на север)
+  description:
+  components:
+  - type: Sprite
+    state: tape20
+  - type: MusicTape
+    sound: "/Audio/_Bayan/TapePlayer/Tracks/nasever.ogg"
+
+- type: entity
+  parent: BaseMusicTape
+  id: MusicTape13
+  name: Кассета (Черниговская хата - Ставлю на зеро)
+  description:
+  components:
+  - type: Sprite
+    state: tape24
+  - type: MusicTape
+    sound: "/Audio/_Bayan/TapePlayer/Tracks/stavnazero.ogg"
+
+- type: entity
+  parent: BaseMusicTape
+  id: MusicTape14
+  name: Кассета (Черниговская хата - Нажми на кнопку)
+  description:
+  components:
+  - type: Sprite
+    state: tape10
+  - type: MusicTape
+    sound: "/Audio/_Bayan/TapePlayer/Tracks/nazminaknopku.ogg"
+
+- type: entity
+  parent: BaseMusicTape
+  id: MusicTape15
+  name: Кассета (Чёрный лукич - Кончились патроны)
+  description:
+  components:
+  - type: Sprite
+    state: tape26
+  - type: MusicTape
+    sound: "/Audio/_Bayan/TapePlayer/Tracks/patroni.ogg"
+
+- type: entity
+  parent: BaseMusicTape
+  id: MusicTape16
+  name: Кассета (Гражданская оборона - Всё идёт по плану)
+  description:
+  components:
+  - type: Sprite
+    state: tape17
+  - type: MusicTape
+    sound: "/Audio/_Bayan/TapePlayer/Tracks/poplanu.ogg"
+
+- type: entity
+  parent: BaseMusicTape
+  id: MusicTape17
+  name: Кассета (??? - riptide)
+  description:
+  components:
+  - type: Sprite
+    state: tape21
+  - type: MusicTape
+    sound: "/Audio/_Bayan/TapePlayer/Tracks/riptide.ogg"
+
+- type: entity
+  parent: BaseMusicTape
+  id: MusicTape18
+  name: Кассета (Черниговская хата - Спектакль окончен)
+  description:
+  components:
+  - type: Sprite
+    state: tape28
+  - type: MusicTape
+    sound: "/Audio/_Bayan/TapePlayer/Tracks/riptide.ogg"
+
+# КИШ - Король И Шут
+
+- type: entity
+  parent: BaseMusicTape
+  id: MusicTape19
+  name: Кассета (Король И Шут - Мёртвый анархист)
+  description:
+  components:
+  - type: Sprite
+    state: tape32
+  - type: MusicTape
+    sound: "/Audio/_Bayan/TapePlayer/Tracks/anarkhist.ogg"
+
+- type: entity
+  parent: BaseMusicTape
+  id: MusicTape20
+  name: Кассета (Король И Шут - Дурак и молния)
+  description:
+  components:
+  - type: Sprite
+    state: tape34
+  - type: MusicTape
+    sound: "/Audio/_Bayan/TapePlayer/Tracks/durak.ogg"
+
+- type: entity
+  parent: BaseMusicTape
+  id: MusicTape21
+  name: Кассета (Король И Шут - Кукла колдуна)
+  description:
+  components:
+  - type: Sprite
+    state: tape11
+  - type: MusicTape
+    sound: "/Audio/_Bayan/TapePlayer/Tracks/kukla.ogg"
+    
+- type: entity
+  parent: BaseMusicTape
+  id: MusicTape22
+  name: Кассета (Король И Шут - Лесник)
+  description:
+  components:
+  - type: Sprite
+    state: tape13
+  - type: MusicTape
+    sound: "/Audio/_Bayan/TapePlayer/Tracks/lesnik.ogg"
+
+- type: entity
+  parent: BaseMusicTape
+  id: MusicTape23
+  name: Кассета (Король И Шут - Ели мясо мужики)
+  description:
+  components:
+  - type: Sprite
+    state: tape42
+  - type: MusicTape
+    sound: "/Audio/_Bayan/TapePlayer/Tracks/myaso.ogg"
+
+- type: entity
+  parent: BaseMusicTape
+  id: MusicTape24
+  name: Кассета (Король И Шут - Ведьма и осёл)
+  description:
+  components:
+  - type: Sprite
+    state: tape40
+  - type: MusicTape
+    sound: "/Audio/_Bayan/TapePlayer/Tracks/vedmaiosel.ogg"
+
+- type: entity
+  parent: BaseMusicTape
+  id: MusicTape25
+  name: Кассета (Король И Шут - Ром)
+  description:
+  components:
+  - type: Sprite
+    state: tape41
+  - type: MusicTape
+    sound: "/Audio/_Bayan/TapePlayer/Tracks/rom.ogg"
+
+- type: entity
+  parent: BaseMusicTape
+  id: MusicTape26
+  name: Кассета (Король И Шут - Хозяин леса)
+  description:
+  components:
+  - type: Sprite
+    state: tape39
+  - type: MusicTape
+    sound: "/Audio/_Bayan/TapePlayer/Tracks/khozyainlesa.ogg"

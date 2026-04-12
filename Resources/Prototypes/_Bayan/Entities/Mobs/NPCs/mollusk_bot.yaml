@@ -1,75 +1,30 @@
 - type: entity
+  parent: BaseMobFlesh
   id: MobMolluskBot
   name: Каркот Радам
   description: Древний конструкт, что был отправлен защищать первых колонистов, выглядит искажённым каким-то существом.
-  parent: SimpleMobBase
-  categories: [ SpawnMenu ]
   components:
-    # Внешний вид
-    - type: Sprite
-      drawdepth: Mobs
-      sprite: _Bayan/Mobs/Aliens/mollusk_bot.rsi
-      layers:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: _Bayan/Mobs/Aliens/mollusk_bot.rsi
+    layers:
       - state: icon
         map: ["enum.DamageStateVisualLayers.Base"]
-
-    - type: DamageStateVisuals
-      states: "*"
-
-    # Физика
-    - type: Physics
-      bodyType: KinematicController
-    - type: Fixtures
-      fixtures:
-        fix1:
-          shape:
-            type:PhysShapeCircle
-            radius: 0.35
-          density: 80
-          mask:
-          - MobMask
-          layer:
-          - MobLayer
-
-    # Поведение: агрессивное
-    - type: HTN
-      rootTask:
-        type:HTNCompoundTask
-        tasks:
-        - type:HTNMeleeCombatTask
-          id: AttackEnemy
-          priority: 5
-        - type:HTNIdleRoamTask
-          id: Wander
-          priority: 1
-
-    - type: NpcFactionMember
-      factions:
-      - SimpleHostile
-
-    # Атака
-    - type: MeleeWeapon
-      hidden: true
-      damage:
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 0.5
+    baseSprintSpeed: 0.8
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg #/Audio/_Bayan/Ambience/Objects/robot_hum.ogg
+    angle: 0
+    animation: WeaponArcClaw
+    damage:
         types:
           Slash: 25
-          Structural: 2
-      attackRate: 1.2
-      range: 1.8
-
-    # Здоровье
-    - type: Damageable
-      damageContainer: Silicon
-    - type: MobState
-      allowedStates:
-        - Alive
-        - Dead
-    - type: MobThresholds
-      thresholds:
-        0: Alive
-        1000: Dead
-
-    # Звуки шагов
-    - type: FootstepModifier
-      footstepSoundCollection:
-        collection: FootstepPlating
+          Structural: 20
+    attackRate: 1.2
+    range: 1.8
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      600: Dead
